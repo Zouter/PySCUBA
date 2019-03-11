@@ -19,7 +19,7 @@ from sys import exit
 from warnings import warn
 
 import numpy as np
-from rpy2.rinterface import NULL, TRUE
+from rpy2.rinterface import NULL
 from rpy2.robjects import numpy2ri
 from rpy2.robjects.packages import importr
 from sklearn.manifold import TSNE
