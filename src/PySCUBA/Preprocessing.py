@@ -57,7 +57,7 @@ def infer_pseudotime(data, output_directory, tag = '', pcv_method = 'Rprincurve'
         
         procedure = princurve.principal_curve
         fitpc = procedure(TSNE_data, NULL, 0.001, False, 200, 2, 'lowess')
-        curve_projections_matrix = np.array(fitpc["s"])[0])
+        curve_projections_matrix = np.array(fitpc["s"][0])
         pseudotime_series = np.array(fitpc["lambda"][0])
          
     else:
